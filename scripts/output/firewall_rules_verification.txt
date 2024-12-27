@@ -1,0 +1,33 @@
+
+Nome da Regra:                        RustDesk Self-Host TCP (21115-21119)
+----------------------------------------------------------------------
+Habilitado:                           Sim
+Direção:                              Entrada
+Perfis:                               Domínio,Particular,Público
+Agrupamento:                          
+LocalIP:                              Qualquer
+RemoteIP:                             Qualquer
+Protocolo:                            TCP
+LocalPort:                            21115-21119
+RemotePort:                           Qualquer
+Travessia da borda:                   Não
+Ação:                                 Permitir
+Ok.
+
+
+
+Nome da Regra:                        RustDesk Self-Host UDP (21116)
+----------------------------------------------------------------------
+Habilitado:                           Sim
+Direção:                              Entrada
+Perfis:                               Domínio,Particular,Público
+Agrupamento:                          
+LocalIP:                              Qualquer
+RemoteIP:                             Qualquer
+Protocolo:                            UDP
+LocalPort:                            21116
+RemotePort:                           Qualquer
+Travessia da borda:                   Não
+Ação:                                 Permitir
+Ok.
+

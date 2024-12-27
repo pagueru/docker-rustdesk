@@ -1,0 +1,12 @@
+[
+    {
+        "name": "RustDesk Self-Host TCP (21115-21119)",
+        "port": "21115-21119",
+        "protocol": "tcp"
+    },
+    {
+        "name": "RustDesk Self-Host UDP (21116)",
+        "port": "21116",
+        "protocol": "udp"
+    }
+]
