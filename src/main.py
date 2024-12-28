@@ -83,7 +83,7 @@ def create_add_rules_bat(rules: List[Dict[str, str]], bat_file_name: Path) -> in
 
                 # Adiciona a linha de comando ao arquivo .bat
                 bat_file.write(line)
-
+            bat_file.write("pause")
         logger.info(f"Arquivo .bat '{rpath(bat_file_name)}' criado com sucesso.")
         return len(rules)
     except Exception as e:
@@ -105,7 +105,7 @@ def create_delete_rules_bat(rules: List[Dict[str, str]], bat_file_name: Path) ->
 
                 # Adiciona a linha de comando ao arquivo .bat
                 bat_file.write(line)
-
+            bat_file.write("pause")
         logger.info(f"Arquivo .bat '{rpath(bat_file_name)}' criado com sucesso.")
         return len(rules)
     except Exception as e:
@@ -209,6 +209,7 @@ def create_verify_rules_bat(
                 bat_file.write(
                     f'netsh advfirewall firewall show rule name="{rule_name}"\n'
                 )
+            bat_file.write("pause")
         logger.info(f"Arquivo .bat '{rpath(verify_bat_file_name)}' criado com sucesso.")
 
     except Exception as e:
